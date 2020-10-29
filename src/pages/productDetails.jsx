@@ -140,7 +140,7 @@ export default function ProductDetails ({location}) {
 
     const dispatch = useDispatch()
     
-    let fav_id = favorite.filter((item) => item.name === productDetails.product.name)
+    let fav_id = favorite ? favorite.filter((item) => item.name === productDetails.product.name) : null
     console.log(fav_id)
 
     React.useEffect(() => {
